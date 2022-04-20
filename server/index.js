@@ -11,7 +11,6 @@ const PATH_INDEX_HTML = path.resolve(PATH_DIST, "index.html");
 app.use(express.json())
 app.use(express.static(PATH_INDEX_HTML));
 app.use(express.static(PATH_DIST));
-app.use(express.static("../client/static/AvatarMaker.png"));
 
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
